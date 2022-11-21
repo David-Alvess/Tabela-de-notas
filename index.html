@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela de alunos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&family=Hanuman&family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <form id="formulario" onsubmit="inserirAluno(event)">
+        <div>
+            <div>
+                <label>Nome do aluno:</label><br>
+                <input type="text" name="nomeAluno" id="inputNomeAluno" placeholder="digite o nome do aluno">
+            </div>
+            <div>
+                <label>Matrícula do aluno::</label><br>
+                <input type="text" name="matriculaAluno" id="inputMatriculaAluno" placeholder="digite o nome do aluno">
+            </div>
+
+            <div>
+                <label>Primeira nota: </label><br>
+                <input type="number" name="nota1" id="inputNota1" placeholder="digite a 1º nota">
+            </div>
+
+            <div>
+                <label>Segunda nota:</label><br>
+                <input type="number" name="nota2" id="inputNota2" placeholder="digite a 2º nota">
+            </div>
+
+            <div>
+                <label>Terceira nota:</label><br>
+                <input type="number" name="nota3" id="inputNota3" placeholder="digite a 3º nota">
+            </div>
+
+            <button type="submit">Inserir</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+    <div>
+        <table border="1" id="tabela-lista">
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Aluno</th>
+                    <th>Media</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+            </table>
+        </div>
+
+    <script src="arquivo.js"></script>
+</body>
+</html>
